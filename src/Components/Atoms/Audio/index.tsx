@@ -9,9 +9,6 @@ export interface AudioProps {
 
 export const Audio: React.FC<AudioProps> = ({}) => (
   <StyledAudio controls>
-    <source
-      src="//file.koe-koe.com/sound/upload/209686.mp3"
-      type="audio/mp3"
-    ></source>
+    <source src="../../../Resource/Bgm/shutter.mp3" type="audio/mp3"></source>
   </StyledAudio>
 );

@@ -54,6 +54,15 @@ export const RequestForm: React.FC<Props> = props => {
         }
       }
     },
+    modalProps: {
+      textProps:{
+        label: "これはモーダルです",
+      },
+      buttonProps: {
+        buttonType: 1,
+        label: "✖︎",
+      },
+    },
     inputWithTextTripProps: {
       textProps: { label: "トリップ（任意）" },
       inputProps: {

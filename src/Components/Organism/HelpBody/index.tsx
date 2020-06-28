@@ -9,6 +9,8 @@ import {
   ButtonPlusMinusProps
 } from "../../Molecules/ButtonPulsMinus";
 import { Counter, CounterProps } from "../../Atoms/Counter";
+import { AudioPlayer, AudioPlayerProps } from "../../Molecules/AudioPlayer";
+import { ShowTimerProps, ShowTimer } from "../../Molecules/ShowTimer";
 
 const {
   StyledDiv,
@@ -27,6 +29,8 @@ export interface HelpBodyProps {
   buttonProps: ButtonProps;
   buttonPlusMinusProps: ButtonPlusMinusProps;
   counterProps: CounterProps;
+  audioPlayerProps: AudioPlayerProps;
+  showTimerProps: ShowTimerProps;
 }
 
 export const HelpBody: React.FC<HelpBodyProps> = ({
@@ -35,7 +39,9 @@ export const HelpBody: React.FC<HelpBodyProps> = ({
   footerProps,
   buttonProps,
   buttonPlusMinusProps,
-  counterProps
+  counterProps,
+  audioPlayerProps,
+  showTimerProps
 }) => (
   <StyledDiv>
     <StyledHeader>
@@ -46,6 +52,8 @@ export const HelpBody: React.FC<HelpBodyProps> = ({
         <Subheader {...subheaderProps} />
       </StyledSubheader>
       <StyledForm>
+        <AudioPlayer {...audioPlayerProps} />
+        <ShowTimer {...showTimerProps} />
         <StyledButton>
           <Counter {...counterProps} />
           <ButtonPlusMinus {...buttonPlusMinusProps} />

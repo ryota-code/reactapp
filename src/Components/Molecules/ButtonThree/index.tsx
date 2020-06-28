@@ -1,12 +1,12 @@
 import * as React from "react";
 import styles from "./style";
-import { Button, ButtonProps } from "../../Atoms/Button";
+import { ButtonProps, Button } from "../../Atoms/Button";
 
 const {
   StyledDiv,
   StyledWomenButton,
   StyledMenButton,
-  StyledCoupleButton,
+  StyledCoupleButton
 } = styles;
 
 export interface ButtonThreeProps {
@@ -18,7 +18,7 @@ export interface ButtonThreeProps {
 export const ButtonThree: React.FC<ButtonThreeProps> = ({
   buttonWomenProps,
   buttonMenProps,
-  buttonCoupleProps,
+  buttonCoupleProps
 }) => (
   <StyledDiv>
     <StyledWomenButton>

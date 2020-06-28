@@ -8,6 +8,7 @@ import { Button, ButtonProps } from "../../Atoms/Button";
 import { Header, HeaderProps } from "../Header";
 import { Footer, FooterProps } from "../Footer";
 import { Subheader, SubheaderProps } from "../../Molecules/Subheader";
+import { Modal,ModalProps } from "../../Molecules/Modal";
 
 const {
   StyledDiv,
@@ -30,6 +31,7 @@ export interface RequestFormBodyProps {
   inputWithTextTripProps: InputWithTextProps;
   inputWithTextRequestProps: InputWithTextProps;
   inputWithTextDeleteProps: InputWithTextProps;
+  modalProps: ModalProps;
   footerProps: FooterProps;
   buttonProps: ButtonProps;
 }
@@ -43,6 +45,7 @@ export const RequestFormBody: React.FC<RequestFormBodyProps> = ({
   inputWithTextDeleteProps,
   footerProps,
   buttonProps,
+  modalProps,
 }) => (
   <StyledDiv>
     <StyledHeader>
@@ -53,6 +56,7 @@ export const RequestFormBody: React.FC<RequestFormBodyProps> = ({
         <Subheader {...subheaderProps} />
       </StyledSubheader>
       <StyledForm>
+        <Modal {...modalProps}/>
         <StyledInputWithTextName>
           <InputWithText {...inputWithTextNameProps} />
         </StyledInputWithTextName>

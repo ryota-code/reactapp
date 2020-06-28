@@ -11,7 +11,7 @@ import requestform, {
   RequestFormActions,
   RequestFormState
 } from "./pages/RequestForm/Module";
-import helpbody, { HelpActions, HelpState } from "./pages/Help/Module";
+import help, { HelpActions, HelpState } from "./pages/Help/Module";
 import detail, { DetailActions, DetailState } from "./pages/detail/Module";
 import genrewomen, {
   GenreWomenActions,
@@ -36,7 +36,7 @@ const createRootReducer = () =>
       table,
       voiceform,
       requestform,
-      helpbody,
+      help,
       detail,
       genrewomen,
       genremen,

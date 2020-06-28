@@ -12,7 +12,7 @@ const {
   StyledSubheader,
   StyledButtonThree,
   StyledList,
-  StyledFooter,
+  StyledFooter
 } = styles;
 
 export interface TableBodyProps {
@@ -28,7 +28,7 @@ export const TableBody: React.FC<TableBodyProps> = ({
   subheaderProps,
   buttonThreeProps,
   listProps,
-  footerProps,
+  footerProps
 }) => (
   <StyledDiv>
     <StyledHeader>
